@@ -1,0 +1,70 @@
+menu "Configurations of common package of usb-samples module"
+	depends on USB_SAMPLES_PKG_COMMON
+
+# config SAMPLE_USBD_DT_NODE_LABEL
+# 	string "USB device sample DT node label"
+# 	default "zephyr_udc0"
+# 	help
+# 		Specify DT node label of usb device
+
+config SAMPLE_USBD_MANUFACTURER
+	string "USB device sample manafacturer string"
+	default "Zephyr Project"
+	help
+		USB device sample manafacturer string.
+	  
+config SAMPLE_USBD_PRODUCT
+	string "USB device sample product string"
+	default "USBD sample"
+	help
+		USB device sample product string.
+
+config SAMPLE_USBD_PID
+	hex "USB device sample Product ID"
+	default 0x0001
+	help
+		USB device sample Product ID.
+
+config SAMPLE_USBD_VID
+	hex "USB device sample Vendor ID"
+	default 0x2fe3
+	help
+		USB device sample Vendor ID.
+
+config SAMPLE_USBD_SELF_POWERD
+	bool "USB device sample Self-powered attribute"
+	default y
+	help
+		Set the Self-powered attribute in the sample configuration.
+
+config SAMPLE_USBD_REMOTE_WAKEUP
+	bool "USB device sample Remote wakeup attribute"
+	default n
+	help
+		Set the Remote Wakup attribute in the sample configuration.
+
+config SAMPLE_USBD_MAX_POWER
+	int "USB device sample bMaxPower value"
+	default 125
+	range 0 250
+	help
+		Set bMaxPower value in the sample configuration in 2 mA units.
+
+config SAMPLE_USBD_20_EXTENSION_DESC
+	bool "Use default USB 2.0 Extension Descriptor"
+	default n
+	help
+		Set bcdUSB value to 0201 and use the default USB 2.0 Extension Descriptor
+
+config SAMPLE_USBD_LOG_LEVEL
+	int "Log level for sample usbd"
+	default 0
+	range 0 4
+	help
+		Set the log level for this module:
+			0 OFF
+			1 ERROR
+			2 WARNING
+			3 INFO
+			4 DEBUG
+endmenu

@@ -1,0 +1,1 @@
+add_subdirectory_ifdef(CONFIG_USB_SAMPLES_PKG_COMMON common)

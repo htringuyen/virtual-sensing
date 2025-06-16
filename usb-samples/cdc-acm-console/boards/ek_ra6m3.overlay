@@ -1,0 +1,18 @@
+&usbfs {
+    zephyr_udc0: udc {
+        status = "okay";
+    };
+};
+
+&usbhs {
+    /delete-node/ udc;
+};
+
+&zephyr_udc0 {
+	cdc_acm_uart0: cdc_acm_uart0 {
+		compatible = "zephyr,cdc-acm-uart";
+	};
+    cdc_acm_uart1: cdc_acm_uart1 {
+		compatible = "zephyr,cdc-acm-uart";
+	};
+};

@@ -1,0 +1,2 @@
+rsource "Kconfig.pkgs"
+rsource "common/Kconfig.pkg"

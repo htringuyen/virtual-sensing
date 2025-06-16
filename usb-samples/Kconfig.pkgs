@@ -1,0 +1,3 @@
+config USB_SAMPLES_PKG_COMMON
+    bool "Enable common package of usb-samples module"
+    default n
