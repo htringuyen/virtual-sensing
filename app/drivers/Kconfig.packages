@@ -1,0 +1,11 @@
+menu "Package enabling for app:drivers module"
+
+config APP_DRIVERS_RTIO_VBUS
+    bool "Enable rtio_vbus package of app:driver module"
+    default n
+
+config APP_DRIVERS_DUMMY
+    bool "Enable dummy package of app:driver module"
+    default n
+
+endmenu

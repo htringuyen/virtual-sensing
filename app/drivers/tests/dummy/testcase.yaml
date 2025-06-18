@@ -1,0 +1,6 @@
+tests:
+  app.drivers.dummy: 
+    tags:
+      - dummy
+    platform_allow:
+      - unit_testing_ext

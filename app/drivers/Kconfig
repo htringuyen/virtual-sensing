@@ -1,0 +1,3 @@
+rsource "Kconfig.packages"
+orsource "rtio_vbus/Kconfig.rtio_vbus"
+orsource "dummy/Kconfig.dummy"

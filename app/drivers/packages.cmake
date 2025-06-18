@@ -1,0 +1,2 @@
+add_subdirectory_ifdef(CONFIG_APP_DRIVERS_RTIO_VBUS rtio_vbus)
+add_subdirectory_ifdef(CONFIG_APP_DRIVERS_DUMMY dummy)

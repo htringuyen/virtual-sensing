@@ -1,0 +1,6 @@
+tests:
+  app.drivers.rtio_vbus.frame_encode: 
+    tags:
+      - rtio_vbus
+    platform_allow:
+      - unit_testing_ext
